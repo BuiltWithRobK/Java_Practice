@@ -1,4 +1,3 @@
-package Performing_Operations;
 class Bitwise
 {
 	public static void main( String[] args )
