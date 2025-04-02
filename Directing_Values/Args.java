@@ -1,5 +1,6 @@
 class Args
 {
+    @SuppressWarnings("ConvertToStringSwitch")
     public static void main(String[]args)
     {
         if (args.length != 3)
