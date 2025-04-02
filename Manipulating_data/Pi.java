@@ -1,4 +1,6 @@
-public class Pi {
+package Manipulating_data;
+
+class Pi {
     public static void main(String[] args) {
         float radius = Float.parseFloat(args[0]);
         float shortPi = (float) Math.PI ;
