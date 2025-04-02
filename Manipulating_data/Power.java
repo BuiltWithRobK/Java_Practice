@@ -1,3 +1,5 @@
+package Manipulating_data;
+
 class Power {
     public static void main(String[] args) {
         try {
