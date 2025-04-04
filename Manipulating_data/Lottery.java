@@ -10,8 +10,10 @@ public class Lottery{
             int r = (int) Math.ceil(Math.random() * 59);
             int temp = nums[i];
             nums[i] = nums[r];
-            nums[r] = nums [i];
+            nums[r] = temp;
         }
-        for (int)
+        for (int i = 1; i < 7; i++){
+            System.out.print(Integer.toString(nums[i]) + " ");
+        }
     }
 }
