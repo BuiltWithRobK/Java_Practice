@@ -1,3 +1,7 @@
+
+// Exercise on page 92-93. Allowed VS code to enhance for loop and adjust sting contains for 
+// future reference
+
 public class StringSearch{
     public static void main(String[] args) {
         String[] books = {
@@ -9,16 +13,17 @@ public class StringSearch{
         int counter2 = 0;
         int counter3 = 0;
 
-        for (int i = 0; i < books.length; i++){
-            
-            System.out.print(books[i].substring(0,4) + " | ");
-
-            if (books[i].endsWith("in easy steps")) counter1++;
-
-            if (books[i].startsWith("Java")) counter2++;
-
-            if (books[i].indexOf("easy") == -1) counter3++;
-
+        for (String book : books) {
+            System.out.print(book.substring(0, 4) + " | ");
+            if (book.endsWith("in easy steps")) {
+                counter1++;
+            }
+            if (book.startsWith("Java")) {
+                counter2++;
+            }
+            if (!book.contains("easy")) {
+                counter3++;
+            }
         }
 
         System.out.println("\nFound " + counter1 + " titles from this series");
