@@ -4,7 +4,7 @@ class SubClass extends SuperClass {
        SuperClass.hello();
        
        try {
-            echo(args);
+            echo(args[0]);
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Argument required");
         } 
